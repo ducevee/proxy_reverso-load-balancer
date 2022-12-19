@@ -13,12 +13,23 @@ services:
       - 80:80
     networks:
       - proxy
-  web-blue:
+
+  web-blue-01:
     image: fabricioveronez/web-page:blue
     networks:
       - proxy    
 
-  web-green:
+  web-blue-02:
+    image: fabricioveronez/web-page:blue
+    networks:
+      - proxy  
+
+  web-green-01:
+    image: fabricioveronez/web-page:green
+    networks:
+      - proxy 
+
+  web-green-02:
     image: fabricioveronez/web-page:green
     networks:
       - proxy 
